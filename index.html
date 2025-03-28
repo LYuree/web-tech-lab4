@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LYuree | Портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="/css/print.css" media="print">
+
+</head>
+<body>
+  <div data-include="navbar"></div>
+  <section id="main" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Добро пожаловать на</h2>
+        <h1>сайт-портфолио</h1>
+        <p>Вас приветствует Логвинов Юрий 👋</p>
+        <p>Я - frontend-разработчик, моя специальность - разработка динамичных и адаптивных пользовательских интерфейсов на React 🚀</p>
+        <h2><a href="#projects" class="btn">Мои работы</a></h2>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/660-45deg.png" alt="Cosmic Illustration">
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Навыки</h2>
+      <div class="skills-slider">
+        <div class="skill">
+          <span>⚛️</span>
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <span>📜</span>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <span>🎨</span>
+          <p>MUI</p>
+        </div>
+        <div class="skill">
+          <span>🐘</span>
+          <p>PHP</p>
+        </div>
+        <div class="skill">
+          <span>🐘</span>
+          <p>PostgreSQl</p>
+        </div>
+        <div class="skill">
+          <span>🐬</span>
+          <p>MySQl</p>
+        </div>
+        <div class="skill">
+          <span>🎨</span>
+          <p>CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Мои проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <!-- <img src="assets/images/proftester.png" alt="Project 1"> -->
+          <h3>Proftester 🧭</h3>
+          <p>Proftester.ru - Один из старейших ресурсов рунета по профориентации. Существует более 15 лет. Комплексное тестирование включает в себя три популярных профориентационных теста и около 500 вопросов. В основе теста проверенные профориентационные методики.
+          </p>
+          <p><strong>Frontend:</strong> HTML, CSS, JS, jQuery.</p>
+          <p><strong>Backend:</strong> PHP, MySQL.</p>
+          <a href="https://proftester.ru" class="btn">Увидеть проект</a>
+        </div>
+        <div class="project-card">
+          <!-- <img src="assets/images/novel_town_logo.jpg" alt="Project 2"> -->
+          <h3>The Novel Town 📕</h3>
+          <p>Сайт интернет-магазина графических новелл и комиксов.</p>
+            <p><strong>Frontend:</strong> React, TS, TailwindCSS.</p>
+            <p><strong>Backend:</strong> Python FastAPI.</p>
+          <a href="#" class="btn">Увидеть проект</a>
+        </div>
+        <div class="project-card">
+          <!-- <img src="assets/images/holmes2.png" alt="Project 3"> -->
+          <h3>Sherlock Notes 📝</h3>
+          <p>Веб-приложение с полноценным CRUD-API для ведения коллекции заметок с возможностью автоматического выделения ключевых слов и выдачей рекомендации о сотрудничестве с другими пользователями на основе сходства наборов ключевых слов.</p>
+          <p><strong>Frontend:</strong> HTML, CSS, JS.</p>
+          <p><strong>Backend:</strong> PHP, PostgreSQL.</p>
+          <a href="#" class="btn">Увидеть проект</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Свяжитесь со мной</h2>
+      <div class="contact-content">
+        <div class="contact-image">
+          <img src="assets/images/space_mail2.png" alt="Contact Illustration">
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Имя" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Сообщение" rows="5" required></textarea>
+          <button type="submit" class="btn">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/slider.js"></script>
+</body>
+</html>

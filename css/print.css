@@ -1,0 +1,181 @@
+/* Print Styles */
+@media print {
+    /* General Reset */
+    body {
+        background: white !important;
+        color: black !important;
+        /* font-size: 12pt; */
+    }
+
+    /* Hide unnecessary elements */
+    .navbar, .social-links, .hero-image, .contact-image, .slick-arrow, .slick-dots, .btn, .contact-form, .hero .btn, .projects .btn, .contact .btn, .contact {
+        display: none !important;
+    }
+
+    /* Adjust layout for print */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero .container, .about-main {
+        /* flex-direction: column; */
+        text-align: left;
+    }
+
+    .hero .container {
+        margin-top: 3rem;
+    }
+
+    .hero-text, .about-bio {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        /* font-size: 24pt; */
+        margin-bottom: 10pt;
+        animation: none;
+        border-right: none;
+    }
+
+    .hero-text h2 {
+        font-size: 18pt;
+        margin-bottom: 10pt;
+    }
+
+    .hero-text h1, h2 {
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 12pt;
+        margin-bottom: 10pt;
+    }
+
+    .skills-slider{
+        display: flex;
+        margin-bottom: 0 !important;
+        /* overflow: wrap; */
+    }
+
+    .skill, .project-card {
+        page-break-inside: avoid;
+        /* margin-bottom: 10pt; */
+    }
+
+    .skill span {
+        font-size: 18pt;
+    }
+
+    .project-card img {
+        /* display: none; */
+        max-width: 100px;
+    }
+
+    .project-card h3 {
+        font-size: 14pt;
+        margin-bottom: 5pt;
+    }
+
+    .project-card p {
+        font-size: 12pt;
+        margin-bottom: 5pt;
+    }
+
+    .about-main {
+        display: block;
+    }
+
+    .about-bio-caption {
+        font-size: 18pt;
+        margin-bottom: 10pt;
+    }
+
+    .about-bio {
+        font-size: 12pt;
+    }
+
+    .about-bio-main-text {
+        text-align: justify;
+    }
+
+    /* Ensure links are visible and printable */
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    .projects {
+        margin-top: 0 !important;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+        padding: 0 !important;
+    }
+
+    /* Add URL after links */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: gray;
+    }
+
+    /* Hide specific links */
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    h2 {
+        padding: 0 !important;
+    }
+    /* Page breaks */
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .contact {
+        page-break-before: always;
+    }
+
+    /* ============ */
+    /* Slick Slider */
+    /* ============ */
+
+    /* Disable Slick slider styles */
+    .skills-slider {
+        /* display: block !important; */
+        white-space: normal !important;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .skills, .projects,
+    .skills .container,
+    .projects .container {
+        padding: 0 !important;
+    }
+
+    .skills-slider .slick-list,
+    .skills-slider .slick-track {
+        /* display: block !important; */
+        /* width: 100% !important; */
+        transform: none !important;
+    }
+
+    .skills-slider .skill {
+        display: inline-block !important;
+        width: 100% !important;
+        margin: 0 0 0 0 !important;
+        page-break-inside: avoid;
+    }
+
+    /* Hide Slick arrows and dots */
+    .slick-arrow,
+    .slick-dots {
+        display: none !important;
+    }
+
+}
