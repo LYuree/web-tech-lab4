@@ -18,42 +18,10 @@
       name="description"
       content="A demo page showing best practices for embedding video on the web"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        /* max-width: 1200px; */
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .video-container {
-        position: relative;
-        width: 640px;
-        height: 360px;
-        /* padding-bottom: 56.25%; */
-        /* 16:9 aspect ratio */
-        /* height: 0; */
-        overflow: hidden;
-        margin: 20px 0;
-        background: #000;
-      }
-
-      .video-container video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      h1 {
-        color: #333;
-      }
-    </style>
   </head>
   <body>
-    <h1>Optimized Video Demonstration</h1>
+    <div data-include="navbar"></div>
+    <h1 class="video-page-caption">Видео</h1>
 
     <!-- Нужно явно указать размеры видево... -->
 
@@ -68,5 +36,8 @@
         </p>
       </video>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
