@@ -29,19 +29,28 @@ body {
   background-color: #330033;
 
   /* фон сплошным цветом + узор */
-  background-image: url("/assets/images/13972-no-background-v2.png");
+  /* background-image: url("/assets/images/13972-no-background-v2.png"); */
 
   /* фон сплошным цветом + полупрозрачный рисунок */
+  background-image: url("/assets/images/endless-constellation.png");
   /* background-image: url("/assets/images/endless-constellation-v2_low_opacity.png"); */
+  /* background-image: url("/assets/images/660-45deg.png"); */
 
   color: white;
 }
 
 img {
-  max-inline-size: 100%;
+  /* max-inline-size: 100%; */
+}
+
+.index-welcome-caption {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 2rem;
 }
 
 /* audio */
+
 
 .track-info {
   color: black;
@@ -167,8 +176,8 @@ div.links {
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  /* font-size: 1.2rem; */
+  /* margin-bottom: 30px; */
 }
 
 .hero-image img {
@@ -186,8 +195,6 @@ div.links {
 }
 
 .about-photo {
-  height: 400px;
-  width: 300px;
   border-radius: 10px;
   border: 2px solid rgb(255, 255, 255, 0.9);
   float: left;
@@ -203,6 +210,10 @@ div.links {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+.about-photo img {
+  border-radius: 10px;
 }
 
 .about-main::after {
@@ -230,7 +241,7 @@ h1.about-bio-caption {
 
 .skills h2 {
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .skills-slider {
@@ -261,7 +272,7 @@ h1.about-bio-caption {
 
 .projects h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .projects-grid {
@@ -351,6 +362,23 @@ h1.about-bio-caption {
   font-weight: bold;
 }
 
+@media (max-width: 798px) {
+  .about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .about-photo {
+    margin: 0 0 1rem 0;
+  }
+
+  .about-bio h1 {
+    text-align: center;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero .container {
@@ -364,6 +392,23 @@ h1.about-bio-caption {
 
   .project-card img {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 600px){
+  .about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .about-photo {
+    margin: 0 0 1rem 0;
+  }
+
+  .about-bio h1 {
+    text-align: center;
   }
 }
 
@@ -407,12 +452,18 @@ h1.about-bio-caption {
   --typewriter-steps: 60;
 }
 
-.hero-text h1 {
+.hero-text span.hero-text-typewriting {
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 2s steps(60) infinite alternate,
     blink 800ms steps(60) infinite normal;
   border-right: 5px solid white;
+  font-size: 3rem;
+}
+
+.hero-text h1 span {
+  /* font-size: 1.2rem; */
+  display: block;
 }
 
 /* General styling for the slider container */
