@@ -30,9 +30,12 @@ body {
 
   /* фон сплошным цветом + узор */
   /* background-image: url("/assets/images/13972-no-background-v2.png"); */
+  /* background-image: url("/assets/images/endless-constellation.png"); */
 
   /* фон сплошным цветом + полупрозрачный рисунок */
-  background-image: url("/assets/images/endless-constellation.png");
+  background-image: url("/assets/images/660-45deg-watermark.png");
+  background-repeat: no-repeat;
+  background-position: top 5rem left 1rem;
   /* background-image: url("/assets/images/endless-constellation-v2_low_opacity.png"); */
   /* background-image: url("/assets/images/660-45deg.png"); */
 
@@ -181,7 +184,6 @@ div.links {
 }
 
 .hero-image img {
-  width: 80%;
   border-radius: 10px;
   animation: updown 2s infinite;
   transform: rotate(45deg);
@@ -296,12 +298,6 @@ h1.about-bio-caption {
   margin: 1rem 0;
 }
 
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
 /* Contact Form */
 .contact {
   padding: 50px 0;
@@ -319,7 +315,6 @@ h1.about-bio-caption {
 }
 
 .contact-image img {
-  width: 100%;
   max-width: 400px;
   border-radius: 10px;
 }
@@ -381,6 +376,10 @@ h1.about-bio-caption {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    background-position: left 50% top 0;
+  }
+
   .hero .container {
     flex-direction: column;
     text-align: center;
