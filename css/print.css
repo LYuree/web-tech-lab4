@@ -21,25 +21,13 @@
         max-width: 100%;
         margin: 0;
         padding: 0;
-    }
-
-    /* .hero-text h1, p {
-        font-size: 3rem;
-      }
-      
-      .hero-text h1 {
-        margin-bottom: 20px;
-      } */
-    
+    }    
 
     .hero .container, .about-main {
         /* flex-direction: column; */
         text-align: left;
     }
 
-    .hero .container {
-        /* margin-top: 24pt; */
-    }
 
     .hero-text, .about-bio {
         max-width: 100%;
@@ -168,9 +156,6 @@
         margin-bottom: 0 !important;
     }
 
-    .contact {
-        /* page-break-before: always; */
-    }
 
     /* ============ */
     /* Slick Slider */

@@ -20,26 +20,24 @@
     />
   </head>
   <body>
-    <div data-include="navbar"></div>
-    <h1 class="audio-page-caption">Аудио</h1>
-
-    <!-- Семантические теги?.. -->
-
-    <div class="audio-player">
-      <div class="track-info">Track 1: Sample Music (MP3 & Opus)</div>
-      <!-- Provide multiple formats for cross-browser compatibility -->
-      <audio controls preload="metadata" style="width: 100%">
-        <source
-          src="assets/audio/tw3_kaer_morhen.opus"
-          type="audio/ogg; codecs=opus"
-        />
-        <source src="assets/audio/tw3_kaer_morhen_opt.mp3" type="audio/mpeg" />
-        <p>
-          Your browser doesn't support HTML5 audio. Here is a
-          <a href="audio.mp3">link to the audio</a> instead.
-        </p>
-      </audio>
-    </div>
+    <header data-include="navbar"></header>
+    <main>
+      <h1 class="audio-page-caption">Аудио</h1>
+      <section class="audio-player">
+        <header class="track-info">The Witcher 3 OST: Kaer Morchen</header>
+        <audio controls preload="metadata" style="width: 100%">
+          <source
+            src="assets/audio/tw3_kaer_morhen.opus"
+            type="audio/ogg; codecs=opus"
+          />
+          <source src="assets/audio/tw3_kaer_morhen_opt.mp3" type="audio/mpeg" />
+          <p>
+            Your browser doesn't support HTML5 audio. Here is a
+            <a href="audio.mp3">link to the audio</a> instead.
+          </p>
+        </audio>
+      </section>
+    </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
