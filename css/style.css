@@ -42,9 +42,6 @@ body {
   color: white;
 }
 
-img {
-  /* max-inline-size: 100%; */
-}
 
 .index-welcome-caption {
   font-weight: bold;
@@ -77,10 +74,6 @@ img {
 }
 
 /* video */
-
-body {
-  /* line-height: 1.6; */
-}
 
 .video-page-caption,
 .audio-page-caption,
@@ -176,11 +169,6 @@ div.links {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-}
-
-.hero-text p {
-  /* font-size: 1.2rem; */
-  /* margin-bottom: 30px; */
 }
 
 .hero-image img {
